@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionsNullableDesign", "OptionsNullableDesign\OptionsNullableDesign.csproj", "{C71E05C9-FC9F-4DB4-A5BE-84C853898828}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionsFunctionalDesign", "OptionsFunctionalDesign\OptionsFunctionalDesign.csproj", "{9C8697F2-C22D-4B84-AE60-CEC04D173D27}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "OptionsFsharp", "OptionsFsharp\OptionsFsharp.fsproj", "{10A5C3B5-0A32-4604-B166-89B95B39768A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C71E05C9-FC9F-4DB4-A5BE-84C853898828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71E05C9-FC9F-4DB4-A5BE-84C853898828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71E05C9-FC9F-4DB4-A5BE-84C853898828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71E05C9-FC9F-4DB4-A5BE-84C853898828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C8697F2-C22D-4B84-AE60-CEC04D173D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8697F2-C22D-4B84-AE60-CEC04D173D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8697F2-C22D-4B84-AE60-CEC04D173D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8697F2-C22D-4B84-AE60-CEC04D173D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10A5C3B5-0A32-4604-B166-89B95B39768A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A5C3B5-0A32-4604-B166-89B95B39768A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A5C3B5-0A32-4604-B166-89B95B39768A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A5C3B5-0A32-4604-B166-89B95B39768A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
