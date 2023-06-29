@@ -26,7 +26,14 @@ string GetBookLabel(Book book) => book
     .Map(author => $"{book.Title} by {author}")
     .Reduce(book.Title);
 
-//One thing glossed over inte the video was, what is the purpose of the reference type constraint and can you do without?
+//Some experiments with value types and non-null defaults.
+var optionalInt = Option<int>.Some(5);
+var noneInt = Option<int>.None();
+
+Console.WriteLine(optionalInt.Reduce(-1)); //Prints 5 as expected.
+Console.WriteLine(noneInt.Reduce(-1)); //Prints 0, which is default(int). For non-nullable value types there is never an alternate Reduce case. 
+
+//One thing glossed over in the video was, what is the purpose of the reference type constraint and can you do without?
 //The generic monad at least compiles without the  constraint (where T : class).
 class Monad<T> where T : class
 {
@@ -38,7 +45,7 @@ class Monad<T> where T : class
 //Not sure of the benefit of the contraint. I will include some experiments with value types.
 public class Option<T>// where T : class
 {
-    private T? _object = default;//Excercise: What happens if type T does not have a null default value, default(CancellationToken) is CancellationToken.None, for instance?
+    private T? _object = default; 
 
     public static Option<T> Some(T obj) => new() { _object = obj };
     public static Option<T> None() => new();

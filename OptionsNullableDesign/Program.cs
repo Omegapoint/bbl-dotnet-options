@@ -17,7 +17,8 @@ var x = nights?.Author?.Lastname?.Length ?? -1;
 var y = rhetoric?.Author?.Lastname?.Substring(0, 3) ?? "unk";
 var z = nights?.Illustrator()?.Lastname?.Substring(0, 3) ?? GetLabel(p3);
 
-//Later on, when speaking about the functional implementation of GetLabel he concludes that this is precisely what you cannot do in the nullable version without branching.
+//Later on, when speaking about the functional implementation of GetLabel he concludes that this is precisely what
+//you cannot do in the nullable version without branching.
 //Apparently he does not consider using ?. and ?? as branching.
 //I suppose that is questionable but he may be right.
 //In any case, the point he is trying to make is in the GetBookLabel below. 
