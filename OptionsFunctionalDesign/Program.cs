@@ -31,7 +31,8 @@ var optionalInt = Option<int>.Some(5);
 var noneInt = Option<int>.None();
 
 Console.WriteLine(optionalInt.Reduce(-1)); //Prints 5 as expected.
-Console.WriteLine(noneInt.Reduce(-1)); //Prints 0, which is default(int). For non-nullable value types there is never an alternate Reduce case. 
+Console.WriteLine(noneInt.Reduce(-1)); //Prints 0, which is default(int).
+                                       //For non-nullable value types there is never an alternate Reduce case. 
 
 //One thing glossed over in the video was, what is the purpose of the reference type constraint and can you do without?
 //The generic monad at least compiles without the  constraint (where T : class).
@@ -42,7 +43,7 @@ class Monad<T> where T : class
 }
 
 //As demonstrated, this also appears to work fine without the reference type constraint, with a minor modification.
-//Not sure of the benefit of the contraint. I will include some experiments with value types.
+//Not sure of the benefit of the constraint. I will include some experiments with value types.
 public class Option<T>// where T : class
 {
     private T? _object = default; 

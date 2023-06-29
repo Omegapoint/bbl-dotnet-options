@@ -23,7 +23,8 @@ let GetLabel person =
 //Variant where I'm deconstructing the book already in the argument.
 let GetBookLabel {Title = title; Author = author} =
     match author with
-        | Some(author) -> $"{title} by {GetLabel author}" //Note, I've redefined author as string. I could have used another name. This is called shadowing.
+        | Some(author) -> $"{title} by {GetLabel author}" //Note, I've redefined author as string.
+                                                          //I could have used another name. This is called shadowing.
         | _ -> $"{title}" //Rest case, same as in C#.
 
 let mann = {Firstname = "Thomas"; Lastname = Some("Mann") }
